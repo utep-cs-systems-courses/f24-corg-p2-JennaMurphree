@@ -19,7 +19,7 @@ void setState(){
   else
     buzzerSetPeriod(0);
 }
-  
+
 void setRedDim(){
   if(count % 2 == 0)
     redOn();
@@ -32,9 +32,9 @@ void setRedBright(){
 }
 
 void setGreenDim(){
-  if(count % 2 == 0)
-    greenOn();
-  else
+  //if(count % 2 == 0)
+  //greenOn();
+  //else
     greenOff();
 }
 
