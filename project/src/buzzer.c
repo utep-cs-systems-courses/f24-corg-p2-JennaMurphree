@@ -1,6 +1,5 @@
 #include <msp430.h>
 #include "libTimer.h"
-#include "buzzer.h"
 
 void buzzerInit() {
     timerAUpmode();		// used to drive speaker
