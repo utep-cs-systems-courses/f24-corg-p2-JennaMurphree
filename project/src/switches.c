@@ -3,7 +3,7 @@
 #include "interuptVectorHandler.h"
 
 
-void switch_init(){
+void switchInit(){
   P2REN |= SWITCHES;  //enable resistors
   P2IE |= SWITCHES;   // enable switch interrupts
   P2OUT |= SWITCHES;  // pull ups for switches
