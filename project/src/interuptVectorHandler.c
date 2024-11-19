@@ -9,3 +9,12 @@ void __interrupt_vec(PORT2_VECTOR) Port_2(){
     switchInterruptHandler(); //methods for when buttons are pressed
   }
 }
+
+static char switchPressCheck(){
+  char p2val = P2IN;
+
+  P2IES |= (p2val & SWITCHES); //set correct switches on
+  P2IES &= (p2val | ~SWITCHES); //turn off any non switches that may have accidentally been turned on
+
+  return p2val;
+}
