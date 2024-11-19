@@ -79,7 +79,7 @@ void updateIntervals(){
   }
   else if(sw4Press == 1){
     increaseGreenInterval();
-    sw3Press = 0;
+    sw4Press = 0;
   }
 }
 
