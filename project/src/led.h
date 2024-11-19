@@ -7,5 +7,10 @@
 
 void ledInit();
 void ledsOff();
+void greenOn();
+void greenOff();
+void redOn();
+void redOff();
+
 
 #endif
