@@ -10,7 +10,7 @@ void __interrupt_vec(PORT2_VECTOR) Port_2(){
   }
 }
 
-static char switchPressCheck(){
+char switchPressCheck(){
   char p2val = P2IN;
 
   P2IES |= (p2val & SWITCHES); //set correct switches on
