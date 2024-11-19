@@ -12,7 +12,7 @@ void setState(){
   if(greenBright)
     setGreenBright();
   else
-    setGreenBright();
+    setGreenDim();
   //set buzzer
   if(redInterval == greenInterval)
     buzzerSetPeriod(1582);
@@ -32,9 +32,9 @@ void setRedBright(){
 }
 
 void setGreenDim(){
-  //if(count % 2 == 0)
-  //greenOn();
-  //else
+ if(count % 2 == 0)
+   greenOn();
+ else
     greenOff();
 }
 
